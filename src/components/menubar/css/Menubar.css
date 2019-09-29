@@ -1,0 +1,25 @@
+.navbar{
+    width:100%;
+    background-color: var(--color-background) !important;
+    height: 50px;
+    top:0;
+    left:0;
+}
+
+.navbar_comp{
+    height:100%;
+   display: flex;
+   align-items: center;
+   margin-left: 10px;
+}
+
+.icon_holder{
+    float: right;
+    margin-left: auto;
+}
+
+.ext_icon{
+    width:40px;
+    height:40px;
+    cursor: pointer;
+}

@@ -1,33 +1,44 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.loadingIndicator{
+  margin-left: calc(100vw/2);
+  margin-top: calc(100vh/2);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+html{
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+* {
+  color : var(--color-textcolor);
+  background-color: var(--color-background);
+  font-family: Montserrat
 }
 
-.App-link {
-  color: #61dafb;
+body::-webkit-scrollbar {
+  width: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0px var(--color-textcolor);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-textcolor);
+  outline: 0px solid var(--color-background);
+  border-radius: 50px;
+}
+
+:root {
+  --color-background:white;
+  --color-textcolor: rgba(45,45,45,0.98);
+  --color-theme: rgba(11, 122, 231, 1);
+  --color-gradient:#73baf3;
+}
+
+body{
+  height:100%;
+  margin: 0px;
+  padding: 0px;
 }
