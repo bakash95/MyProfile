@@ -51,6 +51,14 @@ export default class Menubar extends Component {
                                     <li>Helped in the development of a standalone tool to identify duplicate bean declarations.</li>
                                 </ul>
                             </div>
+
+                            <div className="sectionContent">
+                                <h4>Associate Software Developer,Banca Sella SPA</h4>
+                                <ul>
+                                    <li>Managed InternetBanking application for Banca Sella</li>
+                                    <li>Worked on React-JS and spring backed Java Backend</li>
+                                </ul>
+                            </div>
                         </article>
                     </section>
                 </div>

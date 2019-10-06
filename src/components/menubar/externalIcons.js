@@ -30,7 +30,7 @@ export default class ExternalIcons extends Component {
         this.setState({ [event]: "" });
     }
     mouseOver = (event) => {
-        this.setState({ [event]: " animated flip" });
+        this.setState({ [event]: " animated bounce" });
     }
     clickAction = (url) => {
         this.props.pageActions.toggleSpinner();
@@ -48,7 +48,7 @@ export default class ExternalIcons extends Component {
     render() {
         return (
             <div>
-                <img className={"ext_icon" + this.state.openClassForTheme} src={theme} alt="Switch Theme" onMouseOver={() => this.mouseOver("openClassForTheme")}
+                <img className={"ext_icon" + this.state.openClassForTheme} title="Switch Theme" src={theme} alt="Switch Theme" onMouseOver={() => this.mouseOver("openClassForTheme")}
                     onMouseLeave={() => { this.onMouseLeave("openClassForTheme") }}
                     onClick={this.switchTheme} />
                 <img className={"ext_icon" + this.state.openClassForGit} onMouseOver={() => this.mouseOver("openClassForGit")}

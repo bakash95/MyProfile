@@ -3,6 +3,8 @@ import './App.css'
 import MenuBar from './components/menubar/Menubar'
 import SideDrawer from './components/sidedrawer/sideDrawer'
 import BackDrop from './components/backdrop/backDrop'
+import Projects from './pages/projects/Projects'
+import Home from './pages/Home/Home'
 import spinner from './public/spinner.svg'
 import { Route, MemoryRouter as Router } from 'react-router-dom';
 import Resume from './pages/resume/Resume'
@@ -44,9 +46,15 @@ class App extends Component {
             <SideDrawer pageActions={pageActions} openOrNot={this.state.drawOpen} />
             {backDrop}
             <Route path="/" component={App}>
+            <Route path="/"
+                exact
+                component={Home} />
               <Route path="/resume"
                 exact
                 component={Resume} />
+              <Route path="/projects"
+                exact
+                component={Projects} />
             </Route>
           </div>
         </Router>

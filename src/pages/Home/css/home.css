@@ -1,0 +1,13 @@
+.container{
+    margin: 2% 15% 2% 10%;
+    width: 80%;
+}
+
+.border-btm{
+    border-bottom: 1px solid var(--color-theme);
+    padding-bottom: 2%
+}
+
+.line-1_7{
+    line-height: 1.7em
+}

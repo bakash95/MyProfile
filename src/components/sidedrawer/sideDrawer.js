@@ -9,8 +9,9 @@ const SideDrawer = (props) => (
             <img className="profile_image" src={image} alt=":("/>
         </div>
         <div className="nav_content">
+            <Link to="/"><button className="nav_button" onClick={()=>{props.pageActions.toggleDrawer()}}>Home</button></Link>
             <Link to="/resume"><button className="nav_button" onClick={()=>{props.pageActions.toggleDrawer()}}>Resume</button></Link>
-            <button className="nav_button">Projects</button>
+            <Link to="/projects"><button className="nav_button" onClick={()=>{props.pageActions.toggleDrawer()}}>Projects</button></Link>
         </div>
     </nav>
 );
