@@ -1,6 +1,6 @@
 .header_resume{
     padding: 0px 0px 2% 0px;
-    margin:4% 6%;
+    margin:2% 6%;
     display: flow-root;
     font-family: Montserrat;
     border-bottom: 1px solid var(--color-theme);
@@ -9,6 +9,14 @@
 @media(max-width: 600px) {
     .header_resume{
         display: flex;
+    }
+
+    .sectionTitle{
+        width: 100% !important;
+    }
+
+    .sectionContent{
+        width:100% !important;
     }
 }
 
@@ -61,9 +69,10 @@
 .sectionTitle{
     color: var(--color-theme);
     float: left;
-    width:25%;
+    width:30%;
     font-family: Montserrat;
     text-transform: uppercase;
+    word-wrap: break-word;
 }
 
 .sectionContent{

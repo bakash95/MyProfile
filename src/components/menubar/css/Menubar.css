@@ -8,9 +8,9 @@
 
 .navbar_comp{
     height:100%;
-   display: flex;
-   align-items: center;
-   margin-left: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
 }
 
 .icon_holder{

@@ -37,7 +37,7 @@ class App extends Component {
     return (
       this.state.showSpinner ?
         <div>
-          <img src={spinner} alt="Loading..." className="loadingIndicator" />
+          <object data={spinner} type="image/svg+xml" aria-label="Loading..." className="loadingIndicator" />
         </div>
         :
         <Router>

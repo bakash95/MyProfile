@@ -10,9 +10,10 @@
     box-sizing: border-box;
     padding: 0px !important;
     outline: none;
+    margin-left: 5px;
 }
 .toggle_line{
     width: 30px;
     height: 2px;
-    background: var(--color-theme)
+    background: var(--color-theme);
 }

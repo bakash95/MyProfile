@@ -3,18 +3,23 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 .loadingIndicator{
-  margin-left: calc(100vw/2);
-  margin-top: calc(100vh/2);
-}
-
-html{
-  height: 100%;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    position: fixed;
+    width: 75px;
+    height: 75px;
 }
 
 * {
   color : var(--color-textcolor);
   background-color: var(--color-background);
   font-family: Montserrat
+}
+
+html{
+  height: 100%;
+  /*added for outline none in mobile devices*/
+  -webkit-tap-highlight-color: transparent;
 }
 
 body::-webkit-scrollbar {

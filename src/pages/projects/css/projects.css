@@ -4,7 +4,7 @@
 }
 
 .cardContainer{
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 4px 0 var(--color-textcolor);
     transition: 0.3ms;
     margin-bottom: 20px;
     min-height: 100px;
@@ -32,5 +32,5 @@ summary{
 }
 
 .cardContainer:hover{
-    box-shadow: 2px 4px 6px 0 var(--color-theme);
+    box-shadow: 2px 4px 6px var(--color-theme);
 }
