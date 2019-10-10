@@ -1,2 +1,2 @@
 My Profile
-A naive project that is always in DEV ideally should showcase my technical skills :p
+A naive project about me that is always in DEV
