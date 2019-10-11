@@ -2,8 +2,9 @@
     "status": "OK",
     "errors": null,
     "messageToUser": null,
-    "response": [
-        "resume",
-        "projects"
-    ]
+    "response": {
+        "home":"/",
+        "resume":"/resume",
+        "projects":"projects"
+    }
 }

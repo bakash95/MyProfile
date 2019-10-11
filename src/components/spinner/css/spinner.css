@@ -1,0 +1,11 @@
+
+.loadingIndicator{
+    width: 25%;
+    height: 25%;
+    max-width: 75px;
+    max-height: 75px;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 10%; left: 0; bottom: 0; right: 0;
+}

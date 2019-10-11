@@ -45,6 +45,10 @@
     padding-left: 40%;
 }
 
+.nav_button::first-letter{
+    text-transform: uppercase;
+}
+
 .nav_button:hover{
     background:var(--color-gradient);
 }

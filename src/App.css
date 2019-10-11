@@ -2,18 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-.loadingIndicator{
-    left: calc(50% - 50px);
-    top: calc(50% - 50px);
-    position: fixed;
-    width: 75px;
-    height: 75px;
-}
-
 * {
   color : var(--color-textcolor);
   background-color: var(--color-background);
-  font-family: Montserrat
+  font-family: Montserrat;
 }
 
 html{

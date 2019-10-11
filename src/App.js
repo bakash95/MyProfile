@@ -5,7 +5,8 @@ import SideDrawer from './components/sidedrawer/sideDrawer'
 import BackDrop from './components/backdrop/backDrop'
 import Projects from './pages/projects/Projects'
 import Home from './pages/Home/Home'
-import spinner from './public/spinner.svg'
+import LoadingIndicator from './components/spinner/spinner'
+
 import { Route, MemoryRouter as Router } from 'react-router-dom';
 import Resume from './pages/resume/Resume'
 
@@ -36,9 +37,7 @@ class App extends Component {
 
     return (
       this.state.showSpinner ?
-        <div>
-          <object data={spinner} type="image/svg+xml" aria-label="Loading..." className="loadingIndicator" />
-        </div>
+        <LoadingIndicator/>
         :
         <Router>
           <div className="app" style={{ "height": "100%" }}>
