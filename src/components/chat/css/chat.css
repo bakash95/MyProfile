@@ -1,0 +1,122 @@
+.modalContent {
+    position: fixed;
+    z-index: 1;
+    width: 300px;
+    margin: auto;
+    min-height: 300px;
+    bottom: 1%;
+    right: 1%;
+    border: 1px solid var(--color-gradient);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease-in;
+    height: 30%;
+}
+
+.wrapper {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    height: 100%;
+}
+
+.close {
+    color: var(--color-textcolor);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    width: 30px;
+}
+
+.chat_title {
+    background: var(--color-theme);
+    display: flex;
+    flex: 1 1 5%;
+    min-height: 2.2em;
+    max-height: 2.2em;
+    justify-content: flex-end;
+}
+
+.chatContent {
+    display: flex;
+    flex: 1 1 85%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    overflow: auto;
+}
+
+.chatRoom {
+    width: 100%;
+    display: flex;
+    min-height: 2em;
+    max-height: 2em;
+    justify-content: space-around;
+    padding-bottom: 2%;
+}
+
+.chatTextbox {
+    width: 75%;
+    border-radius: 10px;
+    outline: none;
+}
+
+.messages {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.self {
+    border: 2px solid #dedede;
+    background-color: var(--color-background);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: monsterat;
+    order: 1;
+    display: flex;
+}
+
+.message {
+    display: flex;
+    justify-content: flex-end;
+    border-top-right-radius: 10px;
+}
+
+.messageTheirs {
+    display: flex;
+    justify-content: flex-start;
+    border-top-left-radius: 10px;
+}
+
+.chat-button {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+    cursor: pointer;
+    outline: none;
+}
+
+.chatClosed{
+    position: absolute;
+    font-family: lato;
+    width: 100%;
+    text-align: center;
+    bottom:2px;
+    color: var(--color-theme);
+}
+
+.chatSend {
+    width: 20px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    image-rendering: crisp-edges;
+}

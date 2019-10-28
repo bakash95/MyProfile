@@ -14,7 +14,7 @@ export default class Menubar extends Component {
                     </div>
                     <div className="flt-right">
                         <ul>
-                            <li>8056138749</li>
+                            <li>8056XXXX49</li>
                             <li>bakash050695@gmail.com</li>
                         </ul>
                     </div>

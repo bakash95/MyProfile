@@ -10,6 +10,8 @@ import LoadingIndicator from './components/spinner/spinner'
 import { Route, MemoryRouter as Router } from 'react-router-dom';
 import Resume from './pages/resume/Resume'
 
+import Chat from './components/chat/Chat'
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -55,6 +57,7 @@ class App extends Component {
                 exact
                 component={Projects} />
             </Route>
+            <Chat/>
           </div>
         </Router>
     );

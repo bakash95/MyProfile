@@ -1,9 +1,9 @@
-.container{
+.container {
     margin: 2% 15% 2% 15%;
     width: 70%;
 }
 
-.cardContainer{
+.cardContainer {
     box-shadow: 0 4px 4px 0 var(--color-textcolor);
     transition: 0.3ms;
     margin-bottom: 20px;
@@ -14,23 +14,30 @@
     padding: 10px 10px 10px 10px;
 }
 
-.cardText{
+.cardText {
     word-wrap: break-word;
 }
 
-summary{
-    color:var(--color-theme)
+summary {
+    color: var(--color-theme)
 }
 
-.cardTextHeader{
+.cardTextHeader {
     font-family: Poppins;
     outline: none
 }
 
-.cardTextContent{
+.cardTextContent {
     font-family: Lato
 }
 
-.cardContainer:hover{
+.cardContainer:hover {
     box-shadow: 2px 4px 6px var(--color-theme);
+}
+
+@media(max-width:600px) {
+    .cardContainer:hover {
+        pointer-events: none;
+        box-shadow: 2px 4px 6px var(--color-theme);
+    }
 }

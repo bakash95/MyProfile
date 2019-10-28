@@ -10,11 +10,11 @@ const callAPI = async (url, httpMethod = "GET", headers = {'Content-Type': 'appl
 }
 
 const basepathDEV = ()=>{
-    return 'http://localhost:3003';
+    return 'http://localhost:8080';
 }
 
 const basepath = ()=>{
-    return 'http://192.168.29.142:8080';
+    return 'http://192.168.29.142:3003';
 }
 
 export default {callAPI};
