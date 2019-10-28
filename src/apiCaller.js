@@ -9,9 +9,9 @@ const callAPI = async (url, httpMethod = "GET", headers = {'Content-Type': 'appl
     return await response.json();
 }
 
-const basepathDEV = ()=>{
-    return 'http://localhost:8080';
-}
+// const basepathDEV = ()=>{
+//     return 'http://localhost:8080';
+// }
 
 const basepath = ()=>{
     return 'http://192.168.29.142:3003';

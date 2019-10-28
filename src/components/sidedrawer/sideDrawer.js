@@ -19,7 +19,7 @@ class SideDrawer extends Component {
         }
     }
 
-    async componentWillMount() {
+    async componentDidMount() {
         try {
             const data = await apiCaller.callAPI('/menu');
             this.setState({ menuData: data.response })
@@ -43,7 +43,7 @@ class SideDrawer extends Component {
                             <LoadingIndicator />
                             :
                             menuData && Object.keys(menuData).map((key) => {
-                                return <Link to={menuData[key]}>
+                                return <Link to={menuData[key]} key={menuData[key]}>
                                     <button className="nav_button" onClick={() => { props.pageActions.toggleDrawer() }}>{key}</button>
                                 </Link>
                             })
