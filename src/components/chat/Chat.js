@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 
-import chat from '../../img/chat_icon.png'
 import close from './img/close_icon.svg'
 
 import SendComp from './SendComp'
@@ -12,15 +11,10 @@ export default class Chat extends Component {
         this.state = {
             messages: [],
             currentMessage: '',
-            openOrNot:false,
             websocket:null,
             closedChat:false,
             closedChatMessage:'Technical Error',
         }
-    }
-
-    closeChat = ()=>{
-        this.setState((props)=>{return {openOrNot:!props.openOrNot}})
     }
 
     componentDidMount(){
@@ -61,11 +55,10 @@ export default class Chat extends Component {
 
     render() {
         return (
-            !this.state.openOrNot ?  <img src={chat} alt="chat" onClick={this.closeChat} className="chat-button"/> : 
             <div className="modalContent">
                 <div className="wrapper">
                     <div className="chat_title">
-                        <img className="close" src={close} alt="close" onClick={this.closeChat}/>
+                        <img className="close" src={close} alt="close" onClick={this.props.closeChat}/>
                     </div>
                     <div className="chatContent">
                         <div className="messages">
