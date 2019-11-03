@@ -19,7 +19,11 @@ class SendComp extends Component {
 
     sendMessage = () => {
         this.refs.input.value = ""
-        this.props.sendMessage(this.state.currentMessage);
+        let message = this.state.currentMessage
+        if (message && message !== "") {
+            this.props.sendMessage(message);
+            this.setState({ currentMessage: "" })
+        }
     }
 
     keyPress = (e) => {

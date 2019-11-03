@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import close from './img/close_icon.svg'
 
 import SendComp from './SendComp'
+import {basepathDEV} from '../../apiCaller'
 import './css/chat.css'
 
 export default class Chat extends Component {
@@ -17,8 +18,13 @@ export default class Chat extends Component {
         }
     }
 
+    componentWillUnmount(){
+        this.state.websocket.close();
+    }
+
     componentDidMount(){
-        let websocket = new WebSocket('ws://localhost:8080/profile');
+        let connectURL = basepathDEV('ws')+'/profile'
+        let websocket = new WebSocket(connectURL);
         websocket.onmessage= (event)=>{
             let messObject = {
                 "message":event.data,
@@ -30,6 +36,8 @@ export default class Chat extends Component {
         websocket.onclose = (event)=>{
             if(event.code!==1006)
                 this.setState({closedChat:true,closedChatMessage:"Sorry your chat timed out as there was no input"});
+            else
+                this.setState({closedChat:true,closedChatMessage:"Oops there was technical issue!"});
         }
 
         websocket.onerror = (event)=>{

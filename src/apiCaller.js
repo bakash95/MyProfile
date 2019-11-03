@@ -5,16 +5,13 @@ const callAPI = async (url, httpMethod = "GET", headers = {'Content-Type': 'appl
         headers: headers,
         body: JSON.stringify(requestBody)
     }
-    let response = await fetch(basepath()+url,requestParams);
+    let response = await fetch(basepathDEV()+url,requestParams);
     return await response.json();
 }
 
-// const basepathDEV = ()=>{
-//     return 'http://localhost:8080';
-// }
-
-const basepath = ()=>{
-    return 'http://192.168.29.142:3003';
+export const basepathDEV = (protocol = 'http')=>{
+    return protocol+'://localhost:8080';
+    //return protocol+'://192.168.29.142:3003';
 }
 
 export default {callAPI};
