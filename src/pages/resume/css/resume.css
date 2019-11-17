@@ -1,9 +1,11 @@
 .header_resume{
     padding: 0px 0px 2% 0px;
     margin:2% 6%;
+    display:table;
     display: flow-root;
     font-family: Montserrat;
     border-bottom: 1px solid var(--color-theme);
+    width: 90%;
 }
 
 @media(max-width: 600px) {
