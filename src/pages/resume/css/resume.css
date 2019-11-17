@@ -4,6 +4,7 @@
     display:table;
     display: flow-root;
     font-family: Montserrat;
+    border-bottom: 1px solid rgba(11, 122, 231, 1);
     border-bottom: 1px solid var(--color-theme);
     width: 90%;
 }
@@ -23,6 +24,7 @@
 }
 
 .name-headr{
+    color:rgba(11, 122, 231, 1);
     color: var(--color-theme);
     font-size: 2em;
     font-weight: 400;
@@ -69,6 +71,7 @@
 }
 
 .sectionTitle{
+    color:rgba(11, 122, 231, 1);
     color: var(--color-theme);
     float: left;
     width:30%;

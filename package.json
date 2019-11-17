@@ -8,6 +8,7 @@
     "express": "^4.17.1",
     "nodemon": "^1.19.3",
     "react": "^16.9.0",
+    "react-app-polyfill": "^1.0.4",
     "react-dom": "^16.9.0",
     "react-router": "^5.1.1",
     "react-router-dom": "^5.1.1",
@@ -20,7 +21,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "mock":"nodemon /server/server.js"
+    "mock": "nodemon /server/server.js"
   },
   "eslintConfig": {
     "extends": "react-app"

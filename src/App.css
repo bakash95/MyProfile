@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 * {
+  color: rgba(45,45,45,0.98);
   color : var(--color-textcolor);
+  background-color:white;
   background-color: var(--color-background);
   font-family: Montserrat;
 }

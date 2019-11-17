@@ -4,6 +4,7 @@
 }
 
 .border-btm{
+    border-bottom:1px solid rgba(11, 122, 231, 1);
     border-bottom: 1px solid var(--color-theme);
     padding-bottom: 2%
 }

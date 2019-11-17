@@ -6,6 +6,7 @@
     min-height: 300px;
     bottom: 1%;
     right: 1%;
+    border: 1px solid #73baf3;
     border: 1px solid var(--color-gradient);
     display: flex;
     flex-direction: column;
@@ -21,6 +22,7 @@
 }
 
 .close {
+    color: rgba(45, 45, 45, 0.98);
     color: var(--color-textcolor);
     float: right;
     font-size: 28px;
@@ -32,6 +34,7 @@
 }
 
 .chat_title {
+    background: rgba(11, 122, 231, 1);
     background: var(--color-theme);
     display: flex;
     flex: 1 1 5%;
@@ -74,6 +77,7 @@
 
 .self {
     border: 2px solid #dedede;
+    background-color: white;
     background-color: var(--color-background);
     border-radius: 5px;
     padding: 10px;
@@ -104,12 +108,13 @@
     outline: none;
 }
 
-.chatClosed{
+.chatClosed {
     position: absolute;
     font-family: lato;
     width: 100%;
     text-align: center;
-    bottom:2px;
+    bottom: 2px;
+    color: rgba(11, 122, 231, 1);
     color: var(--color-theme);
 }
 

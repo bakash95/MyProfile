@@ -1,5 +1,6 @@
 .navbar{
     width:100%;
+    background-color:white ;
     background-color: var(--color-background) !important;
     height: 50px;
     top:0;

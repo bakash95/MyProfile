@@ -15,5 +15,6 @@
 .toggle_line{
     width: 30px;
     height: 2px;
+    background: rgba(11, 122, 231, 1);
     background: var(--color-theme);
 }
