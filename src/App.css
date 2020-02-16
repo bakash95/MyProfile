@@ -8,6 +8,7 @@
   background-color:white;
   background-color: var(--color-background);
   font-family: Montserrat;
+  transition: background-color 2s ease-out,color 2s ease-out,box-shadow 2s ease-in-out;
 }
 
 html{
@@ -41,4 +42,26 @@ body{
   height:100%;
   margin: 0px;
   padding: 0px;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
 }

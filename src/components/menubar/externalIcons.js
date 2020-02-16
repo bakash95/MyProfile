@@ -7,11 +7,12 @@ import "animate.css"
 export default class ExternalIcons extends Component {
     constructor(props) {
         super(props);
+        let currentHours = new Date().getHours();
         this.state = {
             openClassForGit: '',
             openClassForLinkedIn: '',
             openClassForTheme: '',
-            currentTheme: "light",
+            currentTheme: currentHours<=6 || currentHours>=18 ? "light" : "dark",
             darkTheme: {
                 "--color-background": "rgba(45,45,45,0.98)",
                 "--color-textcolor": "white",
@@ -26,6 +27,10 @@ export default class ExternalIcons extends Component {
             },
         }
     }
+    componentDidMount(){
+        console.log('will mount from external');
+        this.switchTheme()
+    }
     onMouseLeave = (event) => {
         this.setState({ [event]: "" });
     }
@@ -38,10 +43,10 @@ export default class ExternalIcons extends Component {
     }
     switchTheme = () => {
         let isLight = this.state.currentTheme === 'light'
-        let theme = isLight ? this.state.darkTheme : this.state.lightTheme
+        let nextTheme = isLight ? this.state.darkTheme : this.state.lightTheme
         this.setState({ currentTheme : isLight ? "dark" : "light"});
-        Object.keys(theme).forEach(key => {
-            const value = theme[key];
+        Object.keys(nextTheme).forEach(key => {
+            const value = nextTheme[key];
             document.documentElement.style.setProperty(key, value);
         });
     }

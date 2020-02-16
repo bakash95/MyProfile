@@ -6,8 +6,12 @@ import BackDrop from './components/backdrop/backDrop'
 import Projects from './pages/projects/Projects'
 import Home from './pages/Home/Home'
 import LoadingIndicator from './components/spinner/spinner'
+import {
+  TransitionGroup,
+  CSSTransition
+} from "react-transition-group";
 
-import { Route, MemoryRouter as Router } from 'react-router-dom';
+import { Route, MemoryRouter as Router, useLocation, Switch } from 'react-router-dom';
 import Resume from './pages/resume/Resume'
 
 import ChatWindow from './components/chat/ChatWindow'
@@ -39,29 +43,48 @@ class App extends Component {
 
     return (
       this.state.showSpinner ?
-        <LoadingIndicator/>
+        <LoadingIndicator />
         :
         <Router>
           <div className="app" style={{ "height": "100%" }}>
             <MenuBar pageActions={pageActions} />
             <SideDrawer pageActions={pageActions} openOrNot={this.state.drawOpen} />
             {backDrop}
-            <Route path="/" component={App}>
-            <Route path="/"
-                exact
-                component={Home} />
-              <Route path="/resume"
-                exact
-                component={Resume} />
-              <Route path="/projects"
-                exact
-                component={Projects} />
-            </Route>
-            <ChatWindow/>
+            <Container />
+            <ChatWindow />
           </div>
         </Router>
     );
   }
+}
+
+const Container = () => {
+  let location = useLocation();
+  return (
+    <TransitionGroup>
+      <CSSTransition
+        key={location.key}
+        classNames="page"
+        timeout={300}
+        unmountOnExit
+      >
+        <Switch location={location}>
+          <Route path="/"
+            component={App} >
+            <Route path="/"
+              exact
+              component={Home} />
+            <Route path="/resume"
+              exact
+              component={Resume} />
+            <Route path="/projects"
+              exact
+              component={Projects} />
+          </Route>
+        </Switch>
+      </CSSTransition>
+    </TransitionGroup>
+  )
 }
 
 export default App;
