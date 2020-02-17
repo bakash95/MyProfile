@@ -8,7 +8,7 @@
   background-color:white;
   background-color: var(--color-background);
   font-family: Montserrat;
-  transition: background-color 2s ease-out,color 2s ease-out,box-shadow 2s ease-in-out;
+  transition: background-color 1s ease-out,color 0.7s ease-in,box-shadow 0.5s ease-in-out;
 }
 
 html{
