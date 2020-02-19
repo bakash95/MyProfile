@@ -27,7 +27,7 @@ export default class Menubar extends Component {
                             </div>
 
                             <div className="sectionContent">
-                                <p>Java Developer who is experienced in developing secure, asynchronous service oriented applications using frameworks such as Spring, Apache camel with intermediate experience in API Gateway</p>
+                                <p>Full Stack Developer who is experienced in developing secure, asynchronous service oriented applications using frameworks such as Spring, Apache camel and libraries like Reactjs with intermediate experience in API Gateway</p>
                             </div>
                         </article>
                     </section>
@@ -56,7 +56,7 @@ export default class Menubar extends Component {
                                 <h4>Associate Software Developer,Banca Sella SPA</h4>
                                 <ul>
                                     <li>Managed InternetBanking application for Banca Sella</li>
-                                    <li>Worked on React-JS and spring backed Java Backend</li>
+                                    <li>Worked on ReactJS and spring backed Java Backend</li>
                                 </ul>
                             </div>
                         </article>
