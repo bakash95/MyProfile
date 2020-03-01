@@ -83,7 +83,7 @@ export default class Chat extends Component {
                             <div ref="scrollToView"/>
                         </div>
                     </div>
-                    {!this.state.closedChat ? <SendComp sendMessage={this.sendMessage}/>:<span className="chatClosed">{this.state.closedChatMessage}</span>}
+                    {!this.state.closedChat ? <SendComp sendMessage={this.sendMessage}/>:<span className="chatRoom">{this.state.closedChatMessage}</span>}
                 </div>
             </div>
         )
