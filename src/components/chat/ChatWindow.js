@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import chat from '../../img/chat_icon.png'
 import './css/chat.css'
 
+import ReactGA from 'react-ga'
+
 export default class ChatWindow extends Component {
     constructor(props) {
         super(props);
@@ -15,9 +17,13 @@ export default class ChatWindow extends Component {
     closeChat = () => {
         this.setState((props) => { return { openOrNot: !props.openOrNot } })
         if (!this.state.Chat) {
-            console.log("importing")
             import('./Chat').then((Chat) => this.setState({ Chat: Chat.default }))
-                .catch((error) => console.log("error loading chat module" + error))
+                .catch((error) => console.error("error loading chat module" + error))
+            ReactGA.event({
+                category: 'help_center',
+                action: 'chat',
+                label: 'click'
+            })
         }
     }
 

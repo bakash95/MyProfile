@@ -4,6 +4,8 @@ import git from './images/git.svg'
 import theme from './images/theme.svg'
 import "animate.css"
 
+import ReactGA from 'react-ga'
+
 export default class ExternalIcons extends Component {
     constructor(props) {
         super(props);
@@ -12,7 +14,7 @@ export default class ExternalIcons extends Component {
             openClassForGit: '',
             openClassForLinkedIn: '',
             openClassForTheme: '',
-            currentTheme: currentHours<=6 || currentHours>=18 ? "light" : "dark",
+            currentTheme: currentHours <= 6 || currentHours >= 18 ? "light" : "dark",
             darkTheme: {
                 "--color-background": "rgba(45,45,45,0.98)",
                 "--color-textcolor": "white",
@@ -27,8 +29,7 @@ export default class ExternalIcons extends Component {
             },
         }
     }
-    componentDidMount(){
-        console.log('will mount from external');
+    componentDidMount() {
         this.switchTheme()
     }
     onMouseLeave = (event) => {
@@ -41,10 +42,30 @@ export default class ExternalIcons extends Component {
         this.props.pageActions.toggleSpinner();
         window.location.href = url
     }
+    redirectLinkedIn = () => {
+        ReactGA.event({
+            category: 'external_click',
+            action: 'redirect',
+            label: 'linkedIn'
+        })
+        this.clickAction("https://www.linkedin.com/in/akash-b-8675ba155/")
+    }
+    redirectGitHub = ()=>{
+        ReactGA.event({
+            category: 'external_click',
+            action: 'redirect',
+            label: 'Github'
+        })
+        this.clickAction("https://github.com/bakash95")
+    }
     switchTheme = () => {
         let isLight = this.state.currentTheme === 'light'
         let nextTheme = isLight ? this.state.darkTheme : this.state.lightTheme
-        this.setState({ currentTheme : isLight ? "dark" : "light"});
+        this.setState({ currentTheme: isLight ? "dark" : "light" }, () => ReactGA.event({
+            category: 'theme',
+            action: 'switch theme',
+            label: this.state.currentTheme
+        }));
         Object.keys(nextTheme).forEach(key => {
             const value = nextTheme[key];
             document.documentElement.style.setProperty(key, value);
@@ -58,11 +79,11 @@ export default class ExternalIcons extends Component {
                     onClick={this.switchTheme} />
                 <img className={"ext_icon" + this.state.openClassForGit} onMouseOver={() => this.mouseOver("openClassForGit")}
                     onMouseLeave={() => { this.onMouseLeave("openClassForGit") }}
-                    onClick={() => { this.clickAction("https://github.com/bakash95") }}
+                    onClick={this.redirectGitHub}
                     src={git} alt="git goes here" />
                 <img className={"ext_icon" + this.state.openClassForLinkedIn} src={image}
                     alt="linkedIn" onMouseOver={() => this.mouseOver("openClassForLinkedIn")}
-                    onClick={() => { this.clickAction("https://www.linkedin.com/in/akash-b-8675ba155/") }}
+                    onClick={this.redirectLinkedIn}
                     onMouseLeave={() => { this.onMouseLeave("openClassForLinkedIn") }} />
             </div>
         )

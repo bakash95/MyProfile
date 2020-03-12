@@ -1,10 +1,17 @@
 const callAPI = async (url, httpMethod = "GET", headers = {'Content-Type': 'application/json'}, requestBody = undefined) => {
+
+    let controller = new AbortController()
+
     let requestParams = {
         method: httpMethod,
         mode: 'cors',
         headers: headers,
-        body: JSON.stringify(requestBody)
+        body: JSON.stringify(requestBody),
+        signal: controller.signal
     }
+
+    setTimeout(()=>{controller.abort()},3000)
+
     let response = await fetch(basepathDEV()+url,requestParams);
     return await response.json();
 }
