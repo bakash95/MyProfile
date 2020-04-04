@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 
 import projects from './projectList'
 
 import './css/projects.css'
 
-export default class Projects extends Component {
+export default class Projects extends PureComponent {
     constructor(props) {
         super(props)
         this.state = {

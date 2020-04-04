@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 
 import chat from '../../img/chat_icon.png'
 import './css/chat.css'
 
 import ReactGA from 'react-ga'
 
-export default class ChatWindow extends Component {
+export default class ChatWindow extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {

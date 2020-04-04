@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import send from './img/send_icon.svg'
 
-class SendComp extends Component {
+class SendComp extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {

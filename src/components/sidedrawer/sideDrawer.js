@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { Link } from 'react-router-dom'
 import './css/sideDrawer.css'
 import image from './images/latest_photo.jpg'
@@ -6,7 +6,7 @@ import image from './images/latest_photo.jpg'
 import apiCaller from '../../apiCaller'
 import LoadingIndicator from '../spinner/spinner'
 
-class SideDrawer extends Component {
+class SideDrawer extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import './App.css'
 import MenuBar from './components/menubar/Menubar'
 import SideDrawer from './components/sidedrawer/sideDrawer'
@@ -18,7 +18,7 @@ import ChatWindow from './components/chat/ChatWindow'
 
 import ReactGA from 'react-ga'
 
-class App extends Component {
+class App extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -81,7 +81,7 @@ const Container = () => {
       <CSSTransition
         key={location.key}
         classNames="page"
-        timeout={100}
+        timeout={500}
         unmountOnExit
       >
         <Switch location={location}>

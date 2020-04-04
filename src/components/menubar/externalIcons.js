@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import image from './images/linkedIn.svg'
 import git from './images/git.svg'
 import theme from './images/theme.svg'
@@ -6,7 +6,7 @@ import "animate.css"
 
 import ReactGA from 'react-ga'
 
-export default class ExternalIcons extends Component {
+export default class ExternalIcons extends PureComponent {
     constructor(props) {
         super(props);
         let currentHours = new Date().getHours();

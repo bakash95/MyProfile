@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 
 import close from './img/close_icon.svg'
 
@@ -6,7 +6,7 @@ import SendComp from './SendComp'
 import { basepathDEV } from '../../apiCaller'
 import './css/chat.css'
 
-export default class Chat extends Component {
+export default class Chat extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {

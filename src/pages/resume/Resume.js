@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 
 import './css/resume.css'
 
-export default class Menubar extends Component {
+export default class Menubar extends PureComponent {
 
     render() {
         return (

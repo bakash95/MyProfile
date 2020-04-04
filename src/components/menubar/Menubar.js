@@ -1,9 +1,9 @@
-import React,{Component} from 'react'
+import React,{PureComponent} from 'react'
 import './css/Menubar.css'
 import ToggleButton from './ToggleButton'
 import ExternalIcons from './externalIcons'
 
-export default class Menubar extends Component{
+export default class Menubar extends PureComponent{
 
     render(){
         return(
