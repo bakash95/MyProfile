@@ -30,9 +30,14 @@ export default class ChatWindow extends Component {
     render() {
         let isChatOpen = this.state.openOrNot;
         let ChatComp = this.state.Chat;
+        let chatOpenFetched = isChatOpen && ChatComp;
         return (
-            !isChatOpen ? <img src={chat} alt="chat" onClick={this.closeChat} className="chat-button" /> :
-                ChatComp && <ChatComp closeChat={this.closeChat} />
+            <>
+                <img src={chat} alt="chat" onClick={this.closeChat} className="chat-button" />
+                <div id={!chatOpenFetched ? "chatNotOpen" : "chatOpen"} className="modalContent" >
+                    {chatOpenFetched ? <ChatComp closeChat={this.closeChat} /> : <div />}
+                </div>
+            </>
         )
     }
 }

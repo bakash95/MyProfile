@@ -1,17 +1,24 @@
 .modalContent {
+    opacity: 1;
     position: fixed;
     z-index: 1;
     width: 300px;
     margin: auto;
-    min-height: 300px;
     bottom: 1%;
     right: 1%;
     border: 1px solid #73baf3;
     border: 1px solid var(--color-gradient);
     display: flex;
     flex-direction: column;
-    transition: all 0.4s ease-in;
-    height: 30%;
+    transition: width 2s, height 2s,opacity 0.5s;
+    height: 50%;
+}
+
+#chatNotOpen.modalContent {
+    opacity: 0;
+    height: 0%;
+    width: 0%;
+    z-index: 0;
 }
 
 .wrapper {
