@@ -1,17 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
 * {
-  color: rgba(45,45,45,0.98);
-  color : var(--color-textcolor);
-  background-color:white;
+  color: rgba(45, 45, 45, 0.98);
+  color: var(--color-textcolor);
+  background-color: white;
   background-color: var(--color-background);
   font-family: Montserrat;
-  transition: background-color 1s ease-out,color 0.7s ease-in,box-shadow 0.5s ease-in-out;
+  font-display: swap;
+  transition: background-color 1s ease-out, color 0.7s ease-in, box-shadow 0.5s ease-in-out;
 }
 
-html{
+html {
   height: 100%;
   /*added for outline none in mobile devices*/
   -webkit-tap-highlight-color: transparent;
@@ -32,14 +29,14 @@ html{
 }
 
 :root {
-  --color-background:white;
-  --color-textcolor: rgba(45,45,45,0.98);
+  --color-background: white;
+  --color-textcolor: rgba(45, 45, 45, 0.98);
   --color-theme: rgba(11, 122, 231, 1);
-  --color-gradient:#73baf3;
+  --color-gradient: #73baf3;
 }
 
-body{
-  height:100%;
+body {
+  height: 100%;
   margin: 0px;
   padding: 0px;
 }
