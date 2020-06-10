@@ -22,8 +22,7 @@ const callAPI = async (url, httpMethod = "GET", headers = { 'Content-Type': 'app
 }
 
 export const basepathDEV = (protocol = 'http') => {
-    return protocol + '://localhost:8080';
-    //return protocol+'://192.168.29.142:3003';
+    return protocol + '://profilebe.herokuapp.com';
 }
 
 export default { callAPI };
