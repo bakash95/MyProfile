@@ -4,8 +4,8 @@
 }
 
 .cardContainer {
-    box-shadow: 0 4px 4px 0 rgba(45,45,45,0.98);
-    box-shadow: 0 4px 4px 0 var(--color-textcolor);
+    box-shadow: 1px 1px 1px 1px rgba(45,45,45,0.98);
+    box-shadow: 1px 1px 1px 1px var(--color-textcolor);
     margin-bottom: 20px;
     min-height: 100px;
     cursor: pointer;
@@ -14,6 +14,7 @@
     background: white;
     background: var(--color-background);
     padding: 10px 10px 10px 10px;
+    border-radius: 10px;
 }
 
 .cardText {
@@ -35,14 +36,14 @@ summary {
 }
 
 .cardContainer:hover {
-    box-shadow: 2px 4px 6px rgba(11, 122, 231, 1);
-    box-shadow: 2px 4px 6px var(--color-theme);
+    box-shadow: 1px 1px 1px 1px rgba(11, 122, 231, 1);
+    box-shadow: 1px 1px 1px 1px var(--color-theme);
 }
 
 @media(max-width:600px) {
     .cardContainer:hover {
         pointer-events: none;
-        box-shadow: 2px 4px 6px rgba(11, 122, 231, 1);
-        box-shadow: 2px 4px 6px var(--color-theme);
+        box-shadow: 1px 1px 1px 1px rgba(11, 122, 231, 1);
+        box-shadow: 1px 1px 1px 1px var(--color-theme);
     }
 }

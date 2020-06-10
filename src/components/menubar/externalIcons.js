@@ -16,14 +16,14 @@ export default class ExternalIcons extends PureComponent {
             openClassForTheme: '',
             currentTheme: currentHours <= 6 || currentHours >= 18 ? "light" : "dark",
             darkTheme: {
-                "--color-background": "rgba(45,45,45,0.98)",
+                "--color-background": "rgba(18, 18, 18)",
                 "--color-textcolor": "white",
-                "--color-theme": "rgb(224, 114, 79)",
-                "--color-gradient": "rgb(224, 114, 79)"
+                "--color-theme": "rgb(183, 148, 246)",
+                "--color-gradient": "rgb(183, 148, 246)"
             },
             lightTheme: {
                 "--color-background": "white",
-                "--color-textcolor": "rgba(45,45,45,0.98)",
+                "--color-textcolor": "rgba(18, 18, 18)",
                 "--color-theme": "rgba(11, 122, 231, 1)",
                 "--color-gradient": "#73baf3"
             },

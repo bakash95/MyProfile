@@ -12,7 +12,7 @@
     outline: none;
     margin-left: 5px;
 }
-
+/* 
 .toggler:hover .toggle_line:nth-child(1){
     transform: skewY(-40deg);
     width: 60%;
@@ -21,7 +21,7 @@
 .toggler:hover .toggle_line:nth-child(3){
     transform: skewY(40deg);
     width: 60%;
-}
+} */
 
 .toggle_line{
     transition:transform 0.5s ease-in;
