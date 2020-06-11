@@ -92,6 +92,9 @@
     font-family: monsterat;
     order: 1;
     display: flex;
+    max-width: 80%;
+    box-sizing: border-box;
+    word-break: break-word;
 }
 
 .message {
