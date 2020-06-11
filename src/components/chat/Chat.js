@@ -23,7 +23,7 @@ export default class Chat extends PureComponent {
     }
 
     componentDidMount() {
-        let connectURL = basepathDEV('ws') + '/profile'
+        let connectURL = basepathDEV('wss') + '/profile/websocket'
         let websocket = new WebSocket(connectURL);
         websocket.onmessage = (event) => {
             let messObject = {

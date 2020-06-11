@@ -21,7 +21,7 @@ const callAPI = async (url, httpMethod = "GET", headers = { 'Content-Type': 'app
     return await response.json();
 }
 
-export const basepathDEV = (protocol = 'http') => {
+export const basepathDEV = (protocol = 'https') => {
     return protocol + '://profilebe.herokuapp.com';
 }
 
