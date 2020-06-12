@@ -34,8 +34,8 @@ export default class Chat extends PureComponent {
         };
 
         websocket.onclose = (event) => {
-            if (event.code !== 1006)
-                this.setState({ closedChat: true, closedChatMessage: "Sorry your chat timed out as there was no input" });
+            if (event.code === 1006)
+                this.setState({ closedChat: true, closedChatMessage: "Your chat window expired" });
             else
                 this.setState({ closedChat: true, closedChatMessage: "Oops there was technical issue!" });
         }
