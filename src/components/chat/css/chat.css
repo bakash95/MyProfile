@@ -95,6 +95,7 @@
     max-width: 80%;
     box-sizing: border-box;
     word-break: break-word;
+    flex-wrap: wrap;
 }
 
 .message {

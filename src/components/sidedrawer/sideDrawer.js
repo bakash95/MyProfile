@@ -5,6 +5,8 @@ import './css/sideDrawer.css'
 import apiCaller from '../../apiCaller'
 import LoadingIndicator from '../spinner/spinner'
 
+import blurredImage from './images/blurredprofile.jpg'
+
 import ReactGA from 'react-ga'
 
 class SideDrawer extends PureComponent {
@@ -16,7 +18,7 @@ class SideDrawer extends PureComponent {
                 "resume": "/resume",
                 "projects": "projects"
             },
-            imgSrc: undefined,
+            imgSrc: blurredImage,
             showSpinner: true,
         }
     }

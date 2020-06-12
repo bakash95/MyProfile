@@ -74,7 +74,7 @@ export default class Chat extends PureComponent {
                                 if (messObject.mine) {
                                     return <div className="message"><div className="self">{messObject.message}</div></div>
                                 } else {
-                                    return <div className="messageTheirs"><div className="self" >{messObject.message}</div></div>
+                                    return <div className="messageTheirs"><div className="self" dangerouslySetInnerHTML={{__html:messObject.message}}></div></div>
                                 }
 
                             })
