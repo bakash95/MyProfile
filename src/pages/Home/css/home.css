@@ -1,14 +1,45 @@
-.container{
-    margin: 2% 15% 2% 6%;
-    width: 80%;
+.intro {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    border-left: 5px solid rgba(11, 122, 231, 1);
+    border-left: 5px solid var(--color-theme);
+    padding-left: 0.8em;
+    font-size: xx-large;
 }
 
-.border-btm{
-    border-bottom:1px solid rgba(11, 122, 231, 1);
-    border-bottom: 1px solid var(--color-theme);
-    padding-bottom: 2%
+.line-1_7 {
+    line-height: 1.7em;
+    padding: 10px 0px;
 }
 
-.line-1_7{
-    line-height: 1.7em
+.skills {
+    padding: 5% 0;
+}
+
+.skills--header {
+    font-family: 'Poppins';
+    font-size: xx-large;
+    border-left: 5px solid rgba(11, 122, 231, 1);
+    border-left: 5px solid var(--color-theme);
+    padding-left: 0.8em;
+}
+
+.skills-content {
+    min-height: 200px;
+    display: flex;
+}
+
+.skills--intro {
+    flex : 0 0 30%;
+    font-size: xx-large;
+    display: flex;
+    font-family: 'Roboto';
+    color: var(--color-theme);
+    align-items: center;
+}
+
+.skills--list {
+    flex : 0 0 70%;
+    display: flex;
 }

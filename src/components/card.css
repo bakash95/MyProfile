@@ -1,0 +1,49 @@
+.cardContainer {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 20px;
+    min-height: 100px;
+    background-color: rgba(45, 45, 45, 0.98);
+    background-color: var(--color-textcolor);
+    background: white;
+    background: var(--color-background);
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
+}
+
+.cardText {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+}
+
+.cardTextHeader {
+    font-size: x-large;
+    font-family: Poppins;
+    outline: none;
+    flex: 1 1 30%;
+}
+
+.cardTextContent {
+    display: flex;
+    align-items: center;
+    flex: 1 1 70%;
+    padding : 10px;
+    word-break: break-word;
+}
+
+.customCardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin : 0px 20px;
+    flex : 0 0 25%;
+    max-width: 25%;
+    min-height: 200px;
+}
+
+.cardImg {
+    margin : 10px 0px;
+    height: 50px;
+    width: 50px;
+}

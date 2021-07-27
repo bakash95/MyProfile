@@ -1,20 +1,57 @@
-import React,{PureComponent} from 'react'
+import React, { useEffect, useState } from 'react'
 import './css/Menubar.css'
-import ToggleButton from './ToggleButton'
-import ExternalIcons from './externalIcons'
+import { Link } from 'react-router-dom'
+import apiCaller from '../../apiCaller'
+import { Switch } from '../switch'
 
-export default class Menubar extends PureComponent{
+const Menubar = (props) => {
+    const [selected, setSelected] = useState(0);
+    const [menuData, setMenuData] = useState({
+        "aboutme": {
+            path: "/",
+            key: "About me"
+        },
+        "workHistory": {
+            path: "/workHistory",
+            key: "Work"
+        },
+        "resume": {
+            path: "/resume",
+            key: "Resume"
+        },
+        "projects": {
+            path: "/projects",
+            key: "My projects"
+        },
+    });
 
-    render(){
-        return(
-            <header className="navbar">
-                <nav className="navbar_comp">
-                    <ToggleButton pageActions={this.props.pageActions}/>
-                    <div className="icon_holder">
-                        <ExternalIcons pageActions={this.props.pageActions}/>
-                    </div>
-                </nav>
-            </header>
-        )
-    }
+    useEffect(() => {
+        (async () => {
+            try {
+                const data = await apiCaller.callAPI('/menu');
+                setMenuData(data.response)
+            } catch (error) {
+            }
+        })()
+    })
+    return (
+        <header className="navbar" >
+            <div>
+                B Akash
+            </div>
+            <div className="nav_content">
+                <div style={{ "padding": "0px 15px" }}><Switch /></div>
+                {
+                    menuData && Object.keys(menuData).map((key, index) => {
+                        let selectedClass = selected === index ? "selected" : ""
+                        return <Link to={menuData[key].path} key={menuData[key].path}>
+                            <button className={`nav_button ${selectedClass}`} onClick={() => setSelected(index)} >{menuData[key].key}</button>
+                        </Link>
+                    })
+                }
+            </div>
+        </header >
+    )
 }
+
+export default Menubar

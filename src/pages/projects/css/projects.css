@@ -1,49 +1,8 @@
 .container {
-    margin: 2% 15% 2% 15%;
-    width: 70%;
-}
-
-.cardContainer {
-    box-shadow: 1px 1px 1px 1px rgba(45,45,45,0.98);
-    box-shadow: 1px 1px 1px 1px var(--color-textcolor);
-    margin-bottom: 20px;
-    min-height: 100px;
-    cursor: pointer;
-    background-color: rgba(45,45,45,0.98);
-    background-color: var(--color-textcolor);
-    background: white;
-    background: var(--color-background);
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-}
-
-.cardText {
-    word-wrap: break-word;
+    padding: 30px 0%;
 }
 
 summary {
-    color:rgba(11, 122, 231, 1);
+    color: rgba(11, 122, 231, 1);
     color: var(--color-theme)
-}
-
-.cardTextHeader {
-    font-family: Poppins;
-    outline: none
-}
-
-.cardTextContent {
-    font-family: Lato
-}
-
-.cardContainer:hover {
-    box-shadow: 1px 1px 1px 1px rgba(11, 122, 231, 1);
-    box-shadow: 1px 1px 1px 1px var(--color-theme);
-}
-
-@media(max-width:600px) {
-    .cardContainer:hover {
-        pointer-events: none;
-        box-shadow: 1px 1px 1px 1px rgba(11, 122, 231, 1);
-        box-shadow: 1px 1px 1px 1px var(--color-theme);
-    }
 }

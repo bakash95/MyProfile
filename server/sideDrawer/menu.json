@@ -3,8 +3,17 @@
     "errors": null,
     "messageToUser": null,
     "response": {
-        "home":"/",
-        "resume":"/resume",
-        "projects":"projects"
+        "aboutme": {
+            "path": "/",
+            "key": "About me"
+        },
+        "resume": {
+            "path": "/resume",
+            "key": "Resume"
+        },
+        "projects": {
+            "path": "/projects",
+            "key": "My projects"
+        }
     }
 }

@@ -5,7 +5,7 @@
   background-color: var(--color-background);
   font-family: Montserrat;
   font-display: swap;
-  transition: background-color 1s ease-out, color 0.7s ease-in, box-shadow 0.5s ease-in-out;
+  transition: background-color 0.5s ease-out, color 0.4s ease-in, box-shadow 0.2s ease-in-out;
 }
 
 html {
@@ -15,7 +15,7 @@ html {
 }
 
 *::-webkit-scrollbar {
-  width: 1em;
+  width: 0.3em;
 }
 
 *::-webkit-scrollbar-track {
@@ -23,7 +23,7 @@ html {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--color-textcolor);
+  background-color: var(--color-theme);
   outline: 0px solid var(--color-background);
   border-radius: 50px;
 }
@@ -61,4 +61,19 @@ body {
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 300ms, transform 300ms;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+}
+
+.footer--icons {
+  margin-left: 40%;
+  display: flex;
+  align-self: center;
+  width: 100%;
+  height: 50%;
 }

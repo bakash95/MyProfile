@@ -3,6 +3,7 @@ import React, { PureComponent } from 'react'
 import projects from './projectList'
 
 import './css/projects.css'
+import { Card } from '../../components/card'
 
 export default class Projects extends PureComponent {
     constructor(props) {
@@ -16,12 +17,7 @@ export default class Projects extends PureComponent {
             <section className="container">
                 {
                     projects.map((project) =>
-                        <article className="cardContainer">
-                            <div className="cardText">
-                                <summary className="cardTextHeader">{project.title}</summary>
-                                <p className="cardTextContent">{project.content}</p>
-                            </div>
-                        </article>
+                        <Card title={project.title} content={project.content} />
                     )
                 }
             </section>
