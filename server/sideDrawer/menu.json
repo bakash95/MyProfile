@@ -7,10 +7,6 @@
             "path": "/",
             "key": "About me"
         },
-        "resume": {
-            "path": "/resume",
-            "key": "Resume"
-        },
         "projects": {
             "path": "/projects",
             "key": "My projects"

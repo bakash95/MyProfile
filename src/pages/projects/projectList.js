@@ -2,12 +2,12 @@ const projects = [
     {
         title: 'Hospital Mgmt',
         content: 'Plain Spring Boot Application with API gateway with URL whitelisting and role based Login with JWT and custom claims',
-        url:'https://github.com/bakash95/HospitalMgmt'
+        url: 'https://github.com/bakash95/HospitalMgmt'
     },
     {
         title: 'NewsBulletin',
         content: 'A News Bulletin App for listing news articles built with Vanilla JS and deployed in Aws BeanStalk and RDS',
-        url:'https://github.com/bakash95/NewsBulletin'
+        url: 'https://github.com/bakash95/NewsBulletin'
     },
     {
         title: 'Lending Loans',
@@ -20,6 +20,10 @@ const projects = [
     {
         title: 'Speech Management App',
         content: 'A speech management app which allows to add speeches to be written and view/edit added speeches'
+    },
+    {
+        title: 'Remaindo',
+        content: 'A Remainder App developed using react native'
     }
 ]
 

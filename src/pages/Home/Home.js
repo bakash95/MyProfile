@@ -3,7 +3,8 @@ import { Card, CustomCard } from '../../components/card'
 import architecture from './image/architecture.svg'
 import frontend from './image/frontend.svg'
 import backend from './image/backend.svg'
-import './css/home.css'
+import './css/home.scss'
+import Resume from '../resume/Resume_akash.pdf'
 
 const Home = (props) => (
     <div className="container">
@@ -24,7 +25,12 @@ const Home = (props) => (
             </div>
             <div className="skills-content">
                 <div className="skills--intro">
-                    5+ Years Of Experience
+                    <span>5+ Years Of Experience</span>
+                    <a href={Resume} style={{"align-self" : "center"}} target="_blank" rel="noopener noreferrer">
+                        <button className="skills--download_resume">
+                            Download CV
+                        </button>
+                    </a>
                 </div>
                 <div className="skills--list">
                     <CustomCard img={frontend} title="Frontend" content="Javascript,Typescript,ReactJS,

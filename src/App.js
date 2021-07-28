@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import './App.css'
+import './App.scss'
 import MenuBar from './components/menubar/Menubar'
 import Projects from './pages/projects/Projects'
 import {WorkHistory} from './pages/work/workHistory'

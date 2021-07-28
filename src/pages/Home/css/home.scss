@@ -18,7 +18,7 @@
 }
 
 .skills--header {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-size: xx-large;
     border-left: 5px solid rgba(11, 122, 231, 1);
     border-left: 5px solid var(--color-theme);
@@ -31,15 +31,30 @@
 }
 
 .skills--intro {
-    flex : 0 0 30%;
+    flex: 0 0 35%;
     font-size: xx-large;
     display: flex;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     color: var(--color-theme);
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    * {
+        margin: 10px 0px;
+    }
+
+    & .skills--download_resume {
+        cursor: pointer;
+        color: white;
+        background-color: var(--color-theme);
+        border: none;
+        border-radius: 20px;
+        width: 10em;
+        height: 35px;
+    }
 }
 
 .skills--list {
-    flex : 0 0 70%;
+    flex: 0 0 70%;
     display: flex;
 }

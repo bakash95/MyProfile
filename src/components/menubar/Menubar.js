@@ -9,19 +9,15 @@ const Menubar = (props) => {
     const [menuData, setMenuData] = useState({
         "aboutme": {
             path: "/",
-            key: "About me"
+            key: "About"
         },
         "workHistory": {
             path: "/workHistory",
             key: "Work"
         },
-        "resume": {
-            path: "/resume",
-            key: "Resume"
-        },
         "projects": {
             path: "/projects",
-            key: "My projects"
+            key: "Projects"
         },
     });
 
