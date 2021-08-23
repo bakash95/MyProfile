@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 
-import chat from '../../img/chat_icon.png'
+import chat from './img/chat.svg'
 import './css/chat.css'
 
 import ReactGA from 'react-ga'

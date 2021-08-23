@@ -20,7 +20,7 @@ const timeLine = [
 export const WorkHistory = () => {
     return <div className="timeline--container">
         {timeLine.map((time, index) => {
-            let classForAlign = index % 2 == 0 ? "left" : "right";
+            let classForAlign = index % 2 === 0 ? "left" : "right";
             return (
                 <div className="timeline-item">
                     <div className="circle"></div>

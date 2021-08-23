@@ -41,7 +41,7 @@ class App extends PureComponent {
         <LoadingIndicator />
         :
         <Router>
-          <div className="app" style={{ "height": "100%", padding: "0% 70px" }}>
+          <div className="app" style={{ "height": "100%", padding: "0% 2em" }}>
             <MenuBar pageActions={pageActions} />
             <Container />
             <footer className="footer">

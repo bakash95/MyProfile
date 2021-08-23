@@ -23,21 +23,33 @@
     border-left: 5px solid rgba(11, 122, 231, 1);
     border-left: 5px solid var(--color-theme);
     padding-left: 0.8em;
+    margin-bottom: 20px;
 }
 
 .skills-content {
     min-height: 200px;
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -20px;
+
+    & > div{
+        margin-bottom: 20px;
+    }
 }
 
 .skills--intro {
-    flex: 0 0 35%;
+    flex: 1 0 35%;
     font-size: xx-large;
     display: flex;
     font-family: "Roboto";
     color: var(--color-theme);
     flex-direction: column;
     justify-content: center;
+    max-width: 320px;
+
+    @media screen and (max-width: 800px) {
+        text-align: center;
+    }
 
     * {
         margin: 10px 0px;
@@ -55,6 +67,15 @@
 }
 
 .skills--list {
-    flex: 0 0 70%;
+    flex: 1 1 70%;
     display: flex;
+    flex-wrap: wrap;
+
+    & > div {
+        margin-left: 20px;
+
+        @media screen and (max-width: 500px) {
+            margin-left: 0px;
+        }
+    }
 }

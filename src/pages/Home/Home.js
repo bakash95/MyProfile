@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CustomCard } from '../../components/card'
+import { CustomCard } from '../../components/card'
 import architecture from './image/architecture.svg'
 import frontend from './image/frontend.svg'
 import backend from './image/backend.svg'

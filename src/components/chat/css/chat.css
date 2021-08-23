@@ -2,16 +2,29 @@
     opacity: 1;
     position: fixed;
     z-index: 1;
-    width: 300px;
+    width: 250px;
     margin: auto;
-    bottom: 1%;
-    right: 1%;
+    bottom: 12%;
+    right: 2%;
     border: 1px solid #73baf3;
     border: 1px solid var(--color-gradient);
     display: flex;
     flex-direction: column;
-    transition: width 2s, height 2s,opacity 0.5s;
     height: 50%;
+}
+
+.modalContent ::after {
+    content: "";
+    height: 0;
+    position: absolute;
+    bottom: calc(-8% - 2px);
+    width: 0;
+    z-index: 1;
+    right : calc(2% + 2px);
+    border: medium solid var(--color-gradient);
+    border-width: 17px 17px 17px 0;
+    transform: rotate(270deg);
+    border-color: transparent var(--color-gradient) transparent transparent;
 }
 
 #chatNotOpen.modalContent {
@@ -114,6 +127,8 @@
     position: fixed;
     right: 10px;
     bottom: 10px;
+    width: 40px;
+    height: 40px;
     z-index: 1;
     cursor: pointer;
     outline: none;
