@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MyProfile/static/css/main.0ede1cfd.chunk.css",
+    "main.css": "/MyProfile/static/css/main.8c69d0fa.chunk.css",
     "main.js": "/MyProfile/static/js/main.ab2aa3d3.chunk.js",
     "main.js.map": "/MyProfile/static/js/main.ab2aa3d3.chunk.js.map",
     "runtime~main.js": "/MyProfile/static/js/runtime~main.a4f841b5.js",
@@ -11,10 +11,10 @@
     "static/js/3.6f8623f9.chunk.js": "/MyProfile/static/js/3.6f8623f9.chunk.js",
     "static/js/3.6f8623f9.chunk.js.map": "/MyProfile/static/js/3.6f8623f9.chunk.js.map",
     "index.html": "/MyProfile/index.html",
-    "precache-manifest.1b26183c76d461544498eade6135d853.js": "/MyProfile/precache-manifest.1b26183c76d461544498eade6135d853.js",
+    "precache-manifest.8f015af8321fa7ed4e3c0872b2cce311.js": "/MyProfile/precache-manifest.8f015af8321fa7ed4e3c0872b2cce311.js",
     "service-worker.js": "/MyProfile/service-worker.js",
     "static/css/2.ff29e5f6.chunk.css.map": "/MyProfile/static/css/2.ff29e5f6.chunk.css.map",
-    "static/css/main.0ede1cfd.chunk.css.map": "/MyProfile/static/css/main.0ede1cfd.chunk.css.map",
+    "static/css/main.8c69d0fa.chunk.css.map": "/MyProfile/static/css/main.8c69d0fa.chunk.css.map",
     "static/media/Resume_akash.pdf": "/MyProfile/static/media/Resume_akash.1d0ba6e0.pdf",
     "static/media/architecture.svg": "/MyProfile/static/media/architecture.578e22fc.svg",
     "static/media/backend.svg": "/MyProfile/static/media/backend.297fb0ba.svg",
