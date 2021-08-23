@@ -37,7 +37,7 @@ $theme-color-dark: #707070;
   }
 
   &::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background: transparent;
   }
 
@@ -94,6 +94,10 @@ $theme-color-dark: #707070;
     &.right {
       margin-right: 50px;
       right: 52%;
+
+      @media screen and (max-width : 500px) {
+        right : 56%
+      }
 
       &::after {
         content: " ";
