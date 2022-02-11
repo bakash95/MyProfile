@@ -5,7 +5,7 @@
   "homepage": "https://bakash95.github.io/MyProfile",
   "dependencies": {
     "animate.css": "^3.7.2",
-    "node-sass": "^4.1.4",
+    "node-sass": "^7.0.0",
     "react": "^16.9.0",
     "react-app-polyfill": "^1.0.4",
     "react-dom": "^16.9.0",
